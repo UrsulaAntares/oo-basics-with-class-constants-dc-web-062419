@@ -15,9 +15,9 @@ class Shoe
   
   BRANDS = []
   
-  def brands=(brand)
-    @brand = brand
-    BRANDS << brand
+  def brands=(brands)
+    @brand = brands
+    BRANDS << brands
     #binding.pry
   end
   binding.pry
