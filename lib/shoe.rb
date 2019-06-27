@@ -5,10 +5,10 @@ class Shoe
   attr_reader :brand
 
   def initialize(brand)
-    BRANDS << brand
     if BRANDS.include?(brand) == false 
-      @brand = brand
+      BRANDS << brand
     end
+    @brand = brand
   end
 
   def cobble
