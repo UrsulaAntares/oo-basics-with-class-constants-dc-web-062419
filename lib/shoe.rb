@@ -5,6 +5,7 @@ class Shoe
   attr_reader :brand
 
   def initialize(brand)
+    BRANDS << brand
     @brand = brand
   end
 
@@ -15,11 +16,11 @@ class Shoe
   
   BRANDS = []
   
-  def brand=(brand)
-    @brand = brand
-    BRANDS << brand
-    binding.pry
-  end
+  # def brand=(brand)
+  #   @brand = brand
+  #   BRANDS << brand
+  #   binding.pry
+  # end
   # binding.pry
   
 end
